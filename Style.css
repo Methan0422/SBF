@@ -1,25 +1,36 @@
 input{
-    width: 25px;
+    width: 50px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    background-color: #F3B713;
+    background-color: rgba(255, 255, 255, 0.8);
     color: white;
       
       
 }
 .grid-container {
+    position: fixed;
+    height: 200px;
+    width: 200px;
     display: grid;
-    column-gap: 10px;
+    column-gap: 5px;
     grid-template-columns: auto auto auto;
     background-color: #996633;
-    padding: 10px;
+    padding: 5px;
   }
   
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding: 5px;
     font-size: 30px;
     text-align: center;
-  }
+}
+#one{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+#one.grid-container{
+
+}
