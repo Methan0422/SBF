@@ -1,17 +1,16 @@
 input{
-    width: 50px;
-    padding: 12px 20px;
+    width: 90px;
+    padding: 35px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.8);
-    color: white;
-      
+    color: black;
+    text-align: center;
       
 }
 .grid-container {
-    position: fixed;
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: auto;
     display: grid;
     column-gap: 5px;
     grid-template-columns: auto auto auto;
