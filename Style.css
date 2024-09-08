@@ -1,6 +1,25 @@
-#input{
-    width: 100%;
+input{
+    width: 25px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    background-color: #F3B713;
+    color: white;
+      
+      
 }
+.grid-container {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    background-color: #996633;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
