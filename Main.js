@@ -13,11 +13,8 @@ dom_solve.addEventListener("click", () => {
     let varName;
     for (let i = 0; i < 3; i++){
         for (let j = 0; j < 3; j++){
-            alert ("got here");
             varName = abc[i] + abc[j];
-            alert (varName);
-            board[abc[i] + abc[j]] = getForm();
-            console.log(board)
+            board[varName] = getForm();
             alert (board);
 
         }
