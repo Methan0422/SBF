@@ -1,5 +1,6 @@
 //calling from css
 let dom_solve = document.querySelector("#solve");
+let dom_reset = document.querySelector("#reset");
 
 //main dictionary
 const board = {};
@@ -13,6 +14,7 @@ let abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',];
 //The solve button
 dom_solve.addEventListener("click", () => {
     getForm();
+    lockGrid();
 
 //potential dictionary   
 /*    let varName;
@@ -26,14 +28,17 @@ dom_solve.addEventListener("click", () => {
     }
 */
 
-//grid system for input boxes
-/*    for (let i = 0; i < 3; i++) {
-        let row = [];
-        for (let j = 0; j < 3; j++) {
-            alert(abc[i] + abc[j]);
-            }}
-*/
 });
+
+//reset
+//document.getElementById('myInput').value = ''"
+dom_reset.addEventListener("click", () => {
+    for (let i = 0; i < 9; i++){
+        for (let j = 0; j < 9; j++){
+            document.getElementById(abc[i] + abc[j]).value = '';
+        }
+    }
+})
 
 //makes list of values
 function getForm(){
@@ -78,4 +83,14 @@ function getForm(){
         }
     }
 }
+
+function lockGrid(){
+    for (let i = 0; i < 9; i++){
+        for (let j = 0; j < 9; j++){
+            document.getElementById(aa).disable = true;
+        }
+    }
+}
+
+
 //let x = document.forms["formOne"]["inputOne"].value;
