@@ -27,7 +27,6 @@ function getForm(){
         let row = [];
         for (let j = 0; j < 3; j++) {
             let x = document.forms[abc[i] + abc[j]][abc[i] + abc[j]].value;
-            alert("start");
             if (x === ''){
                 row.push('0');
             }
@@ -35,10 +34,9 @@ function getForm(){
                 row.push(x);
             }
         }
-        alert("close");
         segOne.push(row);
     }
-    alert("Made it");
+    alert(segOne);
     grid.push(segOne);
 }
 //let x = document.forms["formOne"]["inputOne"].value;
