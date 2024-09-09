@@ -6,11 +6,15 @@ const board = {};
 
 let grid = [];
 let segOne = [];
-let abc = ['a', 'b', 'c', 'd', 'e', 'g', 'h', 'i', 'j'];
+let abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',];
 
 //The solve button
 dom_solve.addEventListener("click", () => {
-    let varName;
+    alert
+    getForm();
+
+//potential dictionary   
+/*    let varName;
     for (let i = 0; i < 3; i++){
         for (let j = 0; j < 3; j++){
             varName = abc[i] + abc[j];
@@ -19,6 +23,7 @@ dom_solve.addEventListener("click", () => {
 
         }
     }
+*/
 
 //grid system for input boxes
 /*    for (let i = 0; i < 3; i++) {
@@ -34,7 +39,7 @@ function getForm(){
     let segOne = [];
     for (let i = 0; i < 3; i++) {
         let row = [];
-        for (let j = 0; j < 3; j++) {
+        for (let j = 0; j < 9; j++) {
             let x = document.forms[abc[i] + abc[j]][abc[i] + abc[j]].value;
             if (x === ''){
                 row.push('0');
@@ -45,7 +50,6 @@ function getForm(){
         }
         segOne.push(row);
     }
-    alert(segOne);
-    return(segOne);
+    alert(segOne[1]);
 }
 //let x = document.forms["formOne"]["inputOne"].value;
