@@ -1,0 +1,1 @@
+let dom_solve = document.querySelector("#solve");
