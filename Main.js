@@ -60,22 +60,21 @@ function getForm(){
         gridColumn.push(column);
     }
     for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 9; j++) {
+        for (let j = 0; j < 3; j++) {
             let box = [];
             for (let k = 0; k < 3; k++){
                 for (let l = 0; l < 3; l++){
-                    let x = document.forms[abc[k + (i * 3)] + abc[l + (j * 3)]][abc[k + (i * 3)] + abc[l (j * 3)]].value;
-                    if (x === ''){
+                    let y = document.forms[abc[k + (i * 3)] + abc[l + (j * 3)]][abc[k + (i * 3)] + abc[l + (j * 3)]].value;
+                    if (y === ''){
                         box.push('0');
                     }
-                    if (x > 0){
-                        box.push(x);
+                    if (y > 0){
+                        box.push(y);
                     }
                 }
 
             }
             gridBox.push(box);
-            alert(gridBox);
         }
     }
 }
