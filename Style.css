@@ -96,3 +96,8 @@ input{
     margin-top: -78px;
     margin-left: 35%;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
