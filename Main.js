@@ -6,12 +6,12 @@ const board = {};
 
 let gridRow = [];
 let gridColumn = [];
+let gridBox = [];
 let segOne = [];
 let abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',];
 
 //The solve button
 dom_solve.addEventListener("click", () => {
-    alert
     getForm();
 
 //potential dictionary   
@@ -58,7 +58,25 @@ function getForm(){
         }
         gridRow.push(row);
         gridColumn.push(column);
-        alert(gridColumn);
+    }
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 9; j++) {
+            let box = [];
+            for (let k = 0; k < 3; k++){
+                for (let l = 0; l < 3; l++){
+                    let x = document.forms[abc[k + (i * 3)] + abc[l + (j * 3)]][abc[k + (i * 3)] + abc[l (j * 3)]].value;
+                    if (x === ''){
+                        box.push('0');
+                    }
+                    if (x > 0){
+                        box.push(x);
+                    }
+                }
+
+            }
+            gridBox.push(box);
+            alert(gridBox);
+        }
     }
 }
 //let x = document.forms["formOne"]["inputOne"].value;
