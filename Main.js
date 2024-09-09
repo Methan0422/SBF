@@ -1,6 +1,8 @@
 //calling from css
 let dom_solve = document.querySelector("#solve");
 
+//main dictionary
+const board = {};
 
 let grid = [];
 let segOne = [];
@@ -8,8 +10,18 @@ let abc = ['a', 'b', 'c', 'd', 'e', 'g', 'h', 'i', 'j'];
 
 //The solve button
 dom_solve.addEventListener("click", () => {
-    getForm();
+    let varName;
+    for (let i = 0; i < 3; i++){
+        for (let j = 0; j < 3; j++){
+            alert ("got here");
+            varName = abc[i] + abc[j];
+            alert (varName);
+            board[abc[i] + abc[j]] = getForm();
+            console.log(board)
+            alert (board);
 
+        }
+    }
 
 //grid system for input boxes
 /*    for (let i = 0; i < 3; i++) {
@@ -37,6 +49,6 @@ function getForm(){
         segOne.push(row);
     }
     alert(segOne);
-    grid.push(segOne);
+    return(segOne);
 }
 //let x = document.forms["formOne"]["inputOne"].value;
