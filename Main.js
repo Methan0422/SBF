@@ -4,7 +4,8 @@ let dom_solve = document.querySelector("#solve");
 //main dictionary
 const board = {};
 
-let grid = [];
+let gridRow = [];
+let gridColumn = [];
 let segOne = [];
 let abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',];
 
@@ -36,10 +37,10 @@ dom_solve.addEventListener("click", () => {
 
 //makes list of values
 function getForm(){
-    let segOne = [];
     for (let i = 0; i < 3; i++) {
         let row = [];
-        for (let j = 0; j < 9; j++) {
+        let column = [];
+        for (let j = 0; j < 3; j++) {
             let x = document.forms[abc[i] + abc[j]][abc[i] + abc[j]].value;
             if (x === ''){
                 row.push('0');
@@ -47,9 +48,17 @@ function getForm(){
             if (x > 0){
                 row.push(x);
             }
+            x = document.forms[abc[j] + abc[i]][abc[j] + abc[i]].value;
+            if (x === ''){
+                column.push('0');
+            }
+            if (x > 0){
+                column.push(x);
+            }
         }
-        segOne.push(row);
+        gridRow.push(row);
+        gridColumn.push(column);
+        alert(gridColumn);
     }
-    alert(segOne[1]);
 }
 //let x = document.forms["formOne"]["inputOne"].value;
