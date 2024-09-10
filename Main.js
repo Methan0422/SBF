@@ -98,17 +98,23 @@ function lockGrid(){
 
 function rowCheck(){
     let tempRow = [];
-    alert(gridRow[0]);
-    for (let i = 0; i < 9; i++){
-        tempRow = gridRow[i];
         for (let j = 0; j < 9; j++){
+            tempRow = gridRow[j];
             for (let k = 0; k < 9; k++){
-                if (tempRow[j] == tempRow[k]){
-                    if
-                }
+                if (tempRow[j] === tempRow[k]){
+                    alert("in");
+                    alert(tempRow[i] + tempRow[k]);
+                    if (j =! k){
+                        alert("impossible");
+                        break;
+                    }
+                    if (j === k){
+                        alert("works");
+                        break;
+                    }
+                
             }
-        }
-\       
+        }     
     }
 }
 //let x = document.forms["formOne"]["inputOne"].value;
