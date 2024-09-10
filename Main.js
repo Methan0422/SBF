@@ -9,7 +9,7 @@ let gridRow = [];
 let gridColumn = [];
 let gridBox = [];
 let segOne = [];
-let abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',];
+const abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',];
 
 //The solve button
 dom_solve.addEventListener("click", () => {
