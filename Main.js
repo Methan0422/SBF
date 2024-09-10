@@ -14,7 +14,8 @@ let abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',];
 //The solve button
 dom_solve.addEventListener("click", () => {
     getForm();
-    lockGrid();
+    rowCheck();
+
 
 //potential dictionary   
 /*    let varName;
@@ -33,8 +34,6 @@ dom_solve.addEventListener("click", () => {
 //reset
 //document.getElementById('myInput').value = ''"
 dom_reset.addEventListener("click", () => {
-
-    
     for (let i = 0; i < 9; i++){
         for (let j = 0; j < 9; j++){
             document.getElementById(abc[i] + abc[j]).value = '';
@@ -44,10 +43,12 @@ dom_reset.addEventListener("click", () => {
 
 //makes list of values
 function getForm(){
-    for (let i = 0; i < 3; i++) {
+    gridRow = [];
+    gridColumn = [];
+    for (let i = 0; i < 9; i++) {
         let row = [];
         let column = [];
-        for (let j = 0; j < 3; j++) {
+        for (let j = 0; j < 9; j++) {
             let x = document.forms[abc[i] + abc[j]][abc[i] + abc[j]].value;
             if (x === ''){
                 row.push('0');
@@ -55,16 +56,17 @@ function getForm(){
             if (x > 0){
                 row.push(x);
             }
-            x = document.forms[abc[j] + abc[i]][abc[j] + abc[i]].value;
-            if (x === ''){
+            let y = document.forms[abc[j] + abc[i]][abc[j] + abc[i]].value;
+            if (y === ''){
                 column.push('0');
             }
-            if (x > 0){
-                column.push(x);
+            if (y > 0){
+                column.push(y);
             }
         }
         gridRow.push(row);
         gridColumn.push(column);
+        alert(gridColumn);
     }
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
@@ -94,5 +96,12 @@ function lockGrid(){
     }
 }
 
-
+function rowCheck(){
+    let tempRow = [];
+    alert(gridRow[0]);
+    for (let i = 0; i < 9; i++){
+        tempRow = gridRow[i];
+        alert(tempRow);
+    }
+}
 //let x = document.forms["formOne"]["inputOne"].value;
