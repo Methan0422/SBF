@@ -17,6 +17,7 @@ dom_solve.addEventListener("click", () => {
     rowCheck();
 
 
+
 //potential dictionary   
 /*    let varName;
     for (let i = 0; i < 3; i++){
@@ -66,7 +67,6 @@ function getForm(){
         }
         gridRow.push(row);
         gridColumn.push(column);
-        alert(gridColumn);
     }
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
@@ -101,7 +101,14 @@ function rowCheck(){
     alert(gridRow[0]);
     for (let i = 0; i < 9; i++){
         tempRow = gridRow[i];
-        alert(tempRow);
+        for (let j = 0; j < 9; j++){
+            for (let k = 0; k < 9; k++){
+                if (tempRow[j] == tempRow[k]){
+                    if
+                }
+            }
+        }
+\       
     }
 }
 //let x = document.forms["formOne"]["inputOne"].value;
