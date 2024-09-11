@@ -101,16 +101,13 @@ function rowCheck(){
         for (let j = 0; j < 9; j++){
             tempRow = gridRow[j];
             for (let k = 0; k < 9; k++){
-                if (tempRow[j] === tempRow[k]){
-                    alert("in");
-                    alert(tempRow[i] + tempRow[k]);
+                if (tempRow[j] === tempRow[k] && tempRow[j] < 0){
+                    alert(tempRow[j] + tempRow[k]);
                     if (j =! k){
                         alert("impossible");
-                        break;
                     }
                     if (j === k){
                         alert("works");
-                        break;
                     }
                 
             }
