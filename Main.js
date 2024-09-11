@@ -106,10 +106,6 @@ function rowCheck(){
                     if (j =! k){
                         alert("impossible");
                     }
-                    if (j === k){
-                        alert("works");
-                    }
-                
             }
         }     
     }
