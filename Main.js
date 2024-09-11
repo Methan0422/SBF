@@ -98,13 +98,16 @@ function lockGrid(){
 
 function rowCheck(){
     let tempRow = [];
-        for (let j = 0; j < 9; j++){
-            tempRow = gridRow[j];
-            for (let k = 0; k < 9; k++){
-                if (tempRow[j] === tempRow[k] && tempRow[j] < 0){
-                    alert(tempRow[j] + tempRow[k]);
-                    if (j =! k){
-                        alert("impossible");
+        for (let i = 0; i < 9; i++){
+            tempRow = [];
+            tempRow = gridRow[i];
+            alert(tempRow);
+            alert(i);
+            for (let j = 0; j < 9; j++){
+                if (tempRow[i] === tempRow[j]){
+                    if (i =! j){;
+                        if (tempRow[i] =! 0){
+                        }
                     }
             }
         }     
