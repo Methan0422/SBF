@@ -106,9 +106,9 @@ function rowCheck(){
             alert(i);
             for (let j = 0; j < 9; j++){
                 if (tempRow[i] === tempRow[j]){
-                    if (i =! j){;
-                        if (tempRow[i] =! 0){
-                        }
+                    if (i != j && tempRow[i] != 0){;
+                        alert("zeros not working");
+                        break
                     }
             }
         }     
