@@ -36,14 +36,14 @@ input{
 }
 .grid-container {
     border-radius: 10px;
+    width: auto;
     height: auto;
     display: grid;
     column-gap: 5px;
     row-gap: 5px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     background-color: #996633;
     padding: 5px;
-    width: 65%;
   }
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
