@@ -17,6 +17,7 @@ dom_solve.addEventListener("click", () => {
     rowCheck();
 
 
+
 //potential dictionary   
 /*    let varName;
     for (let i = 0; i < 3; i++){
@@ -69,7 +70,6 @@ function getForm(){
         }
         gridRow.push(row);
         gridColumn.push(column);
-        alert(gridColumn);
     }
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
@@ -91,20 +91,30 @@ function getForm(){
     }
 }
 
+/*
 function lockGrid(){
     for (let i = 0; i < 9; i++){
         for (let j = 0; j < 9; j++){
-            document.getElementById(aa).disable = true;
+            document.getElementById(abc[i] + abc[j]).disable = true;
         }
     }
-}
+}*/
 
 function rowCheck(){
     let tempRow = [];
-    alert(gridRow[0]);
-    for (let i = 0; i < 9; i++){
-        tempRow = gridRow[i];
-        alert(tempRow);
+        for (let i = 0; i < 9; i++){
+            tempRow = [];
+            tempRow = gridRow[i];
+            alert(tempRow);
+            alert(i);
+            for (let j = 0; j < 9; j++){
+                if (tempRow[i] === tempRow[j]){
+                    if (i =! j){;
+                        if (tempRow[i] =! 0){
+                        }
+                    }
+            }
+        }     
     }
 }
 //let x = document.forms["formOne"]["inputOne"].value;

@@ -3,10 +3,26 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+div {
+    width: 100vw;
+    height: 100vh;
+}
 html, body{
     font-family: "Poppins", sans-serif;
     color: white;
     background-color: #222738;
+}
+#author{
+    position: relative;
+    font-size: 30px;
+    top: -100%;
+    text-align: center;
 }
 input{
     width: 60px;
@@ -21,13 +37,13 @@ input{
 .grid-container {
     border-radius: 10px;
     height: auto;
-    width: auto;
     display: grid;
     column-gap: 5px;
     row-gap: 5px;
     grid-template-columns: auto auto auto;
     background-color: #996633;
     padding: 5px;
+    width: 65%;
   }
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -43,12 +59,6 @@ input{
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: #222738;
-}
-#author{
-    text-align: center;
-    padding-bottom: 10px;
-    font-size: 30px;
-    margin: 40px;
 }
 #reset{
     font-size: 15px;
@@ -70,7 +80,7 @@ input{
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #re{
-    margin-top: 760px;
+    margin-top: -60%;
     margin-left: 55%;
 }
 #solve{
@@ -84,7 +94,7 @@ input{
     cursor: pointer;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 200px;
-    padding-top: 30px;
+    padding-top: 3%;
     padding-bottom: 30px;
 }
 #solve:hover{
@@ -93,9 +103,10 @@ input{
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #so{
-    margin-top: -78px;
-    margin-left: 35%;
+    margin-top: -56.9%;
+    margin-left: 31%;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
