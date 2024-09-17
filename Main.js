@@ -118,3 +118,4 @@ function rowCheck(){
     }
 }
 //let x = document.forms["formOne"]["inputOne"].value;
+//Jay Smells bad
