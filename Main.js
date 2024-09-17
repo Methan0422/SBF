@@ -37,6 +37,9 @@ dom_reset.addEventListener("click", () => {
     for (let i = 0; i < 9; i++){
         for (let j = 0; j < 9; j++){
             document.getElementById(abc[i] + abc[j]).value = '';
+            gridRow = [];
+            gridColumn = [];
+            gridBox = [];
         }
     }
 })
