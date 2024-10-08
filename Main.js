@@ -121,5 +121,19 @@ function rowCheck(){
         }     
     }
 }
+
+function row_missing(){
+    let missing = [];
+    for (let i = 0; i < 9; i++){
+        temp_missing_row = gridRow[i];
+        for (let j = 0; j < 9; j++){
+            if (temp_missing_row[j] == 0){
+                temp_missing_row = temp_missing_row.push[j];
+            }
+        }
+        // for (let j = 0; j < 9; j++){
+        //     temp_missing_row[j]
+        // }
+    }
+}
 //let x = document.forms["formOne"]["inputOne"].value;
-//Jay Smells bad
